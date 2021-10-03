@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthmug | Your Gateway to Health</title>
+    <meta name="theme-color" content="#51c9a6">
+    <meta name="msapplication-navbutton-color" content="#51c9a6">
+    <meta name="application-name" content="Healthmug LT">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Healthmug LT">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+
+    <!-- <link rel="apple-touch-icon" href="https://static.oxinis.com/healthmug/image/healthmug/healthmuglogo-192.png"> -->
+
+    <!-- <link rel="shortcut icon" href="https://static.oxinis.com/healthmug/image/healthmug/healthmuglogo-32.png" type="image/x-icon"> -->
+
+    <link rel="stylesheet" href="https://static.oxinis.com/healthmug/css/healthmug-combined-6a75d3cd87.min.css" />
+    <style>
+        .btn,
+        article,
+        body,
+        button,
+        div,
+        form,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        html,
+        input,
+        label,
+        li,
+        ol,
+        p,
+        span,
+        ul {
+            font-family: Roboto, sans-serif;
+        }
+        /* .navbar1 {
+            top: 0;
+            position: sticky;
+            cursor: pointer;
+            background: rgb(255, 255, 255);
+        } */
+        
+        .spriteHealthmug {
+            background-image: url(https://static.oxinis.com/healthmug/css/image/sprite-healthmug.png);
+            background-repeat: no-repeat;
+        }
+        
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            top: 100%;
+            left: 50%;
+            margin-left: -60px;
+        }
+        
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+        
+        body {
+            background-color: #eceaea;
+        }
+        
+        nav {
+            background-color: #51C9A6;
+            height: 24px;
+            margin-top: 4%;
+        }
+        
+        .noLink {
+            color: #FBFBFB;
+            padding: 0.84%;
+            font-size: 14px;
+        }
+        
+        nav {
+            display: block;
+        }
+        
+        #slide>div {
+            background-color: white;
+            margin: 10px 10px 10px 10px;
+        }
+        
+        #a3 {
+            margin: 10px 10px 10px 10px;
+            background-color: white;
+        }
+        
+        #slide {
+            margin: 10px 10px 10px 10px;
+            height: 420px;
+            display: flex;
+            background-color: white;
+        }
+        
+        #slidewindow {
+            margin: 10px 10px 10px 10px;
+            background-color: white;
+        }
+        
+        #s1 {
+            margin: 10px 10px 10px 10px;
+            background-color: white;
+            font-size: 16px;
+            display: flex;
+        }
+        
+        #s2 {
+            margin: 10px 10px 10px 10px;
+            margin-left: 50px;
+            background-color: white;
+            font-size: 16px;
+            padding: 10px 0;
+            font-weight: 400;
+        }
+        
+        #myslideshow>img {
+            margin: 10px 10px 10px 10px;
+            background-color: white;
+            width: 100%;
+            height: 400px;
+        }
+        
+        #myslideshow2 {
+            margin: 10px 10px 10px 10px;
+            background-color: white;
+            padding-left: 15px;
+        }
+        
+        img {
+            margin: 10px 10px 10px 10px;
+            background-color: white;
+        }
+        
+        #b1 {
+            margin: 10px 10px 10px 10px;
+            background-color: white;
+        }
+        
+        .block3 {
+            margin: 10px 10px 10px 10px;
+            display: grid;
+            width: 100%;
+            grid-template-columns: 32% 32% 32%;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        #block31 {
+            margin: 10px 10px 10px 10px;
+            background-color: white;
+            width: 98%;
+        }
+        
+        .b4 {
+            margin: 10px 10px 10px 10px;
+            padding-top: 10px;
+            width: 100%;
+            height: 290px;
+            background-color: white;
+        }
+        
+        #block42:hover {
+            -ms-transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            transform: scale(1.1);
+        }
+        
+        #block31:hover {
+            -ms-transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+            transform: scale(0.9);
+        }
+        
+        #block55:hover {
+            -ms-transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+            transform: scale(1.1);
+        }
+        
+        #block604:hover {
+            -ms-transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+            transform: scale(0.9);
+        }
+        
+        .block4 {
+            margin: 10px 10px 10px 10px;
+            display: grid;
+            gap: 10px;
+            background-color: rgb(255, 255, 255);
+            grid-template-columns: 11% 11% 11% 11% 11% 11% 11% 11%;
+        }
+        
+        #block41 {
+            margin: 0px 10px 0px 10px;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        #block42 {
+            margin: 10px 10px 10px 10px;
+            background-color: rgb(248, 246, 246);
+            border-radius: 100%;
+            width: 75%;
+        }
+        
+        #block43 {
+            margin: 10px 10px 10px 10px;
+            background-color: rgb(255, 255, 255);
+            font-size: 16px;
+            padding: 10px 0;
+            font-weight: 500;
+            color: #505050;
+        }
+        
+        #block45 {
+            margin: 10px 10px 10px 5px;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            padding-left: 4px;
+        }
+        
+        .b5 {
+            margin: 0px 10px 10px 10px;
+            padding-top: 0px;
+            width: 100%;
+            height: 400px;
+            background-color: white;
+        }
+        
+        #b51 {
+            margin: 10px 10px 10px 10px;
+            background-color: white;
+            font-size: 16px;
+            padding: 10px 0;
+            font-weight: 500;
+            color: #505050;
+        }
+        
+        .block5 {
+            margin: 10px 10px 10px 10px;
+            display: grid;
+            gap: 10px;
+            background-color: rgb(255, 255, 255);
+            grid-template-columns: 11% 11% 11% 11% 11% 11% 11% 11%;
+        }
+        
+        #block55 {
+            margin: 10px 10px 10px 10px;
+            background-color: rgb(248, 246, 246);
+            width: 90%;
+        }
+        
+        .block6 {
+            margin: 10px 10px 10px 10px;
+            background-color: white;
+            width: 100%;
+            height: 250px;
+            display: flex;
+        }
+        
+        .block601 {
+            margin: 10px 10px 10px 10px;
+            display: grid;
+            gap: 10px;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+            grid-template-columns: 20% 20% 20% 20% 20%;
+        }
+        
+        #block602 {
+            margin: 10px 10px 10px 10px;
+            background-color: white;
+            height: 100px;
+        }
+        
+        #block603 {
+            margin: 10px 10px 10px 10px;
+            padding-left: 20px;
+            background-color: white;
+        }
+        
+        #block604 {
+            background-color: white;
+            margin: 10px 10px 10px 10px;
+            width: 70%;
+        }
+        
+        #c1 {
+            margin: 10px 10px 10px 10px;
+            padding-left: 20px;
+            background-color: white;
+        }
+        
+        #block61 {
+            margin: 10px 10px 10px 10px;
+            background-color: #fafafa;
+            width: 15%;
+        }
+        
+        #block62 {
+            margin: 10px 10px 10px 10px;
+            background-color: rgb(255, 255, 255);
+            width: 80%;
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+        }
+        
+        #block63 {
+            margin: 10px 10px 10px 10px;
+            background-color: white;
+            margin: 10px 0px 0px 25px;
+            justify-content: center;
+            text-align: center;
+            width: 60%;
+            height: 100px;
+            border-radius: 100%;
+            align-items: center;
+        }
+        
+        #block64 {
+            margin: 10px 10px 10px 10px;
+            background-color: white;
+            margin: 3px 12px 3px 0px;
+            text-align: center;
+            font-family: Roboto, sans-serif;
+            color: rgb(132, 140, 160);
+            font-size: 19px;
+        }
+        
+        #block65 {
+            margin: 10px 10px 10px 10px;
+            background-color: #51C9A6;
+            text-align: center;
+            color: #fff;
+            margin-left: 30px;
+            position: static;
+            width: 100px;
+            font-size: 20px;
+            border-radius: 2px;
+            padding: 8px 10px;
+            font-size: 14px;
+            line-height: 16px;
+        }
+        
+        .block8 {
+            margin: 10px 10px 10px 10px;
+            background-color: white;
+            width: 100%;
+            height: 150px;
+            display: grid;
+            grid-template-columns: 33.33% 33.33% 33.33%;
+        }
+        
+        #block81 {
+            margin: 10px 10px 10px 10px;
+            background-color: white;
+            width: 90%;
+        }
+        
+        #block82 {
+            margin: 10px 10px 10px 10px;
+            width: 100%;
+        }
+        
+        .block9 {
+            margin: 10px 10px 10px 10px;
+            width: 100%;
+            height: 190px;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+        
+        .b9 {
+            margin: 10px 10px 10px 10px;
+            background-color: white;
+            font-size: 16px;
+            padding: 2px;
+            font-weight: 500;
+            color: #505050;
+            text-transform: uppercase;
+            box-sizing: border-box;
+        }
+        
+        #block91 {
+            margin: 10px 10px 10px 10px;
+            display: flex;
+            background-color: white;
+            margin-right: 5px;
+        }
+        
+        #block92 {
+            margin: 10px 10px 10px 10px;
+            width: 22%;
+            height: 80px;
+            border: 1px solid #a5aaa6;
+            border-radius: 100%;
+            background-color: white;
+        }
+        
+        #block93 {
+            margin: 10px 10px 10px 10px;
+            font-size: 13px;
+            display: inline-block;
+            padding: 7px 15px;
+            background-color: rgb(255, 255, 255);
+            color: #51C9A6;
+            border: 1px solid #b4dbba;
+            border-radius: 16px;
+        }
+        
+        #block94 {
+            margin: 10px 10px 10px 10px;
+            font-size: 14px;
+            margin: 5px 0 15px;
+            background-color: white;
+        }
+        
+        #block95 {
+            margin: 10px 10px 10px 10px;
+            font-size: 22px;
+            font-weight: 400;
+            background-color: white;
+        }
+        
+        .girdboxs {
+            margin: 10px 10px 10px 10px;
+            background-color: rgb(255, 255, 255);
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            grid-template-rows: repeat(4, 100px);
+        }
+        
+        .box1 {
+            background-color: rgb(255, 255, 255);
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 5;
+        }
+        
+        .box2 {
+            background-color: rgb(255, 255, 255);
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        
+        .box3 {
+            background-color: rgb(255, 255, 255);
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        
+        .box4 {
+            background-color: rgb(255, 255, 255);
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+        
+        .box5 {
+            background-color: rgb(255, 255, 255);
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+        
+        #block11 {
+            margin: 10px 10px 10px 10px;
+            width: 200px;
+            height: 140px;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        #block12 {
+            margin: 10px 10px 10px 10px;
+            width: 370px;
+            height: 220px;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        #block011 {
+            width: 200px;
+            height: 150px;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        #b11 {
+            background-color: rgb(255, 255, 255);
+            font-size: 30px;
+            font-weight: 400;
+            padding: 20px 400px 0px 0px;
+            border: none;
+            color: #FB8903;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .b10 {
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            height: 550px;
+            padding-top: 10px;
+            padding-left: 13%;
+        }
+        
+        #b13 {
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            line-height: 16px;
+            font-size: 16px;
+            max-height: 32px;
+            height: 32px;
+            text-align: center;
+            overflow: hidden;
+            margin: 30px 0px 10px;
+            color: rgb(81, 201, 166);
+            font-size: 16px;
+            background-color: white;
+        }
+        
+        #b14 {
+            background-color: white;
+        }
+        
+        #b15 {
+            background-color: white;
+            color: #51C9A6;
+            text-overflow: ellipsis;
+            display: block;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            -webkit-line-clamp: 3;
+            line-height: 18px;
+            font-size: 14px;
+            max-height: 54px;
+            height: 54px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="navbar1">
+
+        <div class="wrapper">
+            <div class="brandName">
+                <a href=""><img src="https://static.oxinis.com/healthmug/image/healthmug/healthmug-logo.png" alt="Healthmug Logo"></a>
+            </div>
+            <div class="topSearch">
+                <form action="/search" method="get">
+                    <div class="searchBox">
+                        <input type="text" placeholder="Search Products" name="keywords" maxlength="100" autocomplete="off" required />
+                        <button class="btn size-lg btn-healthmug"><i class="fa fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="headerTopRight">
+                <a href=""><i class="spriteHealthmug contact"></i><span>Contact Us</span></a>
+                <a href=""><i class="spriteHealthmug sell"></i><span>Sell with us</span></a>
+                <div class="tooltip">
+                    <div>
+                        <a href="Signup.html"><i class="spriteHealthmug account"></i>
+          <span>Sign In</span></a>
+                    </div>
+                    <a href="Login.html"><span class="tooltiptext">Log In</span></a>
+
+                    <div>
+
+                    </div>
+                </div><a href="" id="cartbigbutton" class="cartbutton openCart"><i data-reactroot="" class="spriteHealthmug"></i></a>
+            </div>
+        </div>
+
+
+        <br>
+        <nav>
+            <div class="container1">
+                <a href="" class="noLink">Disease</a>
+                <a class="noLink">Allopathy</a>
+                <a class="noLink">Homeopathy</a>
+                <a class="noLink">Ayurveda</a>
+                <a class="noLink">Unani</a>
+                <a class="noLink">Nutrition</a>
+                <a class="noLink">Personal Care</a>
+                <a class="noLink">Baby Care</a>
+                <a class="noLink">Sexual wellness</a>
+                <a class="noLink">Fitness</a>
+                <a class="noLink">Consultation</a>
+            </div>
+        </nav>
+
+    </div>
+
+
+    <div id="slidewindow">
+        <div id="slide">
+
+            <div id="myslideshow"> </div>
+            <div id="myslideshow2">
+                <img src="https://static.oxinis.com/healthmug/image/asset/595-os.png" alt="" id="a3">
+                <img src="https://static.oxinis.com/healthmug/image/asset/10-sb.jpg" alt="" id="a3">
+                <img src="https://static.oxinis.com/healthmug/image/asset/529-jk.png" alt="" id="a3">
+            </div>
+
+        </div>
+        <div id="s1">
+            <a href="#" id="s2">Get discount with extra space </a>
+            <a href="#" id="s2">Get discount with extra space  </a>
+            <a href="#" id="s2">Doctor Booking</a>
+            <a href="#" id="s2">Top Brand product</a>
+
+        </div>
+    </div>
+
+
+    <br>
+
+
+    <div class="b5">
+        <h2 id="b51">TOP CATEGORIES</h2>
+
+        <div class="block5">
+
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/category/10000.png" alt="" id="block42">
+                    <p id="block45">Deals</p>
+                </a>
+
+            </div>
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/category/0.png" alt="" id="block42">
+                    <p id="block45">Sonsult</p>
+                </a>
+            </div>
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/category/213.png" alt="" id="block42">
+                    <p id="block45">Hair Fall</p>
+                </a>
+            </div>
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/category/1.png" alt="" id="block42">
+                    <p id="block45">Low Height</p>
+                </a>
+            </div>
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/category/9.png" alt="" id="block42">
+                    <p id="block45">Headache&Migr </p>
+                </a>
+            </div>
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/category/163.png" alt="" id="block42">
+                    <p id="block45">Obesity</p>
+                </a>
+            </div>
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/category/122.png" alt="" id="block42">
+                    <p id="block45">Snoring </p>
+                </a>
+            </div>
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/category/82.png" alt="" id="block42">
+                    <p id="block45">Piles&Fissures</p>
+                </a>
+            </div>
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/category/41.png" alt="" id="block42">
+                    <p id="block45">Piles&Fissures</p>
+                </a>
+            </div>
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/category/20.png" alt="" id="block42">
+                    <p id="block45">Piles&Fissures</p>
+                </a>
+            </div>
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/category/38.png" alt="" id="block42">
+                    <p id="block45">Piles&Fissures</p>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="block3">
+        <div id="block31">
+            <img src="https://static.oxinis.com/healthmug/image/asset/167-ql.png" alt="" id="block31">
+        </div>
+        <div id="block31">
+            <img src="https://static.oxinis.com/healthmug/image/asset/391-ke.png" alt="error" id="block31">
+        </div>
+        <div id="block31">
+            <img src="https://static.oxinis.com/healthmug/image/asset/526-gc.png" alt="" id="block31">
+        </div>
+    </div>
+
+    <br>
+
+    <div class="b4">
+        <h2 id="block43">SHOP BY HEALTH CONCERN </h2>
+
+        <div class="block4">
+
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/disease/9-icon.png" alt="" id="block42">
+                    <p id="block45">Arthritis & Rheumatism </p>
+                </a>
+            </div>
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/disease/34-icon.png" alt="" id="block42">
+                    <p id="block45">Diabetes</p>
+                </a>
+            </div>
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/disease/49-icon.png" alt="" id="block42">
+                    <p id="block45">Hair Fall</p>
+                </a>
+            </div>
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/disease/72-icon.png" alt="" id="block42">
+                    <p id="block45">Low Height</p>
+                </a>
+            </div>
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/disease/51-icon.png" alt="" id="block42">
+                    <p id="block45">Headache&Migr </p>
+                </a>
+            </div>
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/disease/79-icon.png" alt="" id="block42">
+                    <p id="block45">Obesity</p>
+                </a>
+            </div>
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/disease/93-icon.png" alt="" id="block42">
+                    <p id="block45">Snoring </p>
+                </a>
+            </div>
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/disease/83-icon.png" alt="" id="block42">
+                    <p id="block45">Piles&Fissures</p>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+    <br>
+
+    <div class="b4">
+        <h2 id="block43">SHOP BY TOP BRANDS</h2>
+
+        <div class="block4">
+
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/brand/1-100.jpg" alt="" id="block55">
+                    <p id="block45">Dr. Reckeweg</p>
+                </a>
+            </div>
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/brand/3-100.jpg" alt="" id="block55">
+                    <p id="block45">SBL</p>
+                </a>
+            </div>
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/brand/2-100.jpg" alt="" id="block55">
+                    <p id="block45">Willmar Schwabe</p>
+                </a>
+            </div>
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/brand/6-100.jpg" alt="" id="block55">
+                    <p id="block45">Bakson</p>
+                </a>
+            </div>
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/brand/193-100.jpg" alt="" id="block55">
+                    <p id="block45">Hevert</p>
+                </a>
+            </div>
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/brand/11-100.jpg" alt="" id="block55">
+                    <p id="block45">Baidyanath</p>
+                </a>
+            </div>
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/brand/264-100.jpg" alt="" id="block55">
+                    <p id="block45">Sri Sri Tattva</p>
+                </a>
+            </div>
+            <div id="block41">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/brand/17-100.jpg" alt="" id="block55">
+                    <p id="block45">Hamdard</p>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <br>
+    <div class="block6">
+
+        <div id="block61">
+            <a href="product.html">
+                <img src="https://static.oxinis.com/healthmug/image/category/213.png" alt="" id="block63">
+                <h2 id="block64">Allopathy</h2>
+            </a>
+            <button id="block65">View All</button>
+
+        </div>
+
+        <div id="block62">
+
+            <div id="block602">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/product/61158-1-150.jpg" alt="" id="block604">
+                    <p id="block603">Dr. Reckeweg</p>
+                </a>
+                <p id="c1">₹: 50</p>
+
+            </div>
+
+            <div id="block602">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/product/411-2-150.jpg" alt="" id="block604">
+                    <p id="block603">SBL</p>
+                </a>
+                <p id="c1">₹: 100</p>
+
+            </div>
+
+            <div id="block602">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/product/227-1-150.jpg" alt="" id="block604">
+                    <p id="block603">Willmar Schwabe</p>
+                </a>
+                <p id="c1">₹: 99</p>
+
+            </div>
+
+            <div id="block602">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/product/80315-1-150.jpg" alt="" id="block604">
+                    <p id="block603">Bakson</p>
+                </a>
+                <p id="c1">₹: 49</p>
+
+            </div>
+
+            <div id="block602">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/product/1883-1-150.jpg" alt="" id="block604">
+                    <p id="block603">Hevert</p>
+                </a>
+                <p id="c1">₹: 150</p>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <br>
+    <div class="block6">
+        <div id="block61">
+            <a href="product.html">
+                <img src="https://static.oxinis.com/healthmug/image/category/1.png" alt="" id="block63">
+                <h2 id="block64">Homeopathy</h2>
+                <button id="block65">View All</button>
+            </a>
+        </div>
+        <div id="block62">
+
+            <div id="block602">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/product/112434-3-150.jpg" alt="" id="block604">
+                    <p id="block603">Dr. Reckeweg</p>
+                </a>
+                <p id="c1">₹: 50</p>
+
+            </div>
+
+            <div id="block602">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/product/104411-1-150.jpg" alt="" id="block604">
+                    <p id="block603">SBL</p>
+                </a>
+                <p id="c1">₹: 100</p>
+
+            </div>
+
+            <div id="block602">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/product/95137-1-150.jpg" alt="" id="block604">
+                    <p id="block603">Willmar Schwabe</p>
+                </a>
+                <p id="c1">₹: 150</p>
+
+            </div>
+
+            <div id="block602">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/product/117616-4-150.jpg" alt="" id="block604">
+                    <p id="block603">Bakson</p>
+                </a>
+                <p id="c1">₹: 40</p>
+
+            </div>
+
+            <div id="block602">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/product/117573-4-150.jpg" alt="" id="block604">
+                    <p id="block603">Hevert</p>
+                </a>
+                <p id="c1">₹: 99</p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <br>
+    <div class="block6">
+        <div id="block61">
+            <a href="product.html">
+                <img src="https://static.oxinis.com/healthmug/image/category/9.png" alt="" id="block63">
+                <h2 id="block64">Ayurveda</h2>
+                <button id="block65">View All</button>
+            </a>
+        </div>
+        <div id="block62">
+
+            <div id="block602">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/product/6125-1-150.jpg" alt="" id="block604">
+                    <p id="block603">Dr. Reckeweg</p>
+                </a>
+                <p id="c1">₹: 50</p>
+            </div>
+
+            <div id="block602">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/product/5317-2-150.jpg" alt="" id="block604">
+                    <p id="block603">SBL</p>
+                </a>
+                <p id="c1">₹: 60</p>
+            </div>
+
+            <div id="block602">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/product/3263-2-150.jpg" alt="" id="block604">
+                    <p id="block603">Willmar Schwabe</p>
+                </a>
+                <p id="c1">₹: 120</p>
+            </div>
+
+            <div id="block602">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/product/153401-1-150.jpg" alt="" id="block604">
+                    <p id="block603">Bakson</p>
+                </a>
+                <p id="c1">₹: 30</p>
+            </div>
+
+            <div id="block602">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/product/126295-4-150.jpg" alt="" id="block604">
+                    <p id="block603">Hevert</p>
+                </a>
+                <p id="c1">₹: 70</p>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <br>
+    <div class="block6">
+        <div id="block61">
+            <a href="product.html">
+                <img src="https://static.oxinis.com/healthmug/image/category/163.png" alt="" id="block63">
+                <h2 id="block64">Unani</h2>
+                <button id="block65">View All</button>
+            </a>
+        </div>
+        <div id="block62">
+
+            <div id="block602">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/product/6880-1-150.jpg" alt="" id="block604">
+                    <p id="block603">Dr. Reckeweg</p>
+                </a>
+                <p id="c1">₹: 50</p>
+            </div>
+
+            <div id="block602">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/product/41865-1-150.jpg" alt="" id="block604">
+                    <p id="block603">SBL</p>
+                </a>
+                <p id="c1">₹: 80</p>
+            </div>
+            <div id="block602">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/product/41866-1-150.jpg" alt="" id="block604">
+                    <p id="block603">Willmar Schwabe</p>
+                </a>
+                <p id="c1">₹: 120</p>
+            </div>
+
+            <div id="block602">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/product/41778-1-150.jpg" alt="" id="block604">
+                    <p id="block603">Bakson</p>
+                </a>
+                <p id="c1">₹: 30</p>
+            </div>
+
+            <div id="block602">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/product/43641-1-150.jpg" alt="" id="block604">
+                    <p id="block603">Hevert</p>
+                </a>
+                <p id="c1">₹: 70</p>
+            </div>
+
+
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="block8">
+
+        <div id="block81">
+            <img src="https://static.oxinis.com/healthmug/image/asset/15-ad.png" alt="" id="block82">
+        </div>
+        <div id="block81">
+            <img src="https://static.oxinis.com/healthmug/image/asset/16-ad.png" alt="" id="block82">
+        </div>
+        <div id="block81">
+            <img src="https://static.oxinis.com/healthmug/image/asset/22-eb.png" alt="" id="block82">
+        </div>
+    </div>
+
+    <br>
+    <div class="b9">
+        <h2 class="b9">START CONSULTATION</h2>
+        <div class="block9">
+            <div id="block91">
+                <img src="https://static.oxinis.com/healthmug/image/consultation/homeopathy-icon.jpg" alt="" id="block92">
+                <div id="block94">
+                    <h2 id="block95">Homeopathy</h2>
+                    <p id="block94">Free Homeopathy Consultation Online</p>
+                    <a href="product.html">
+                        <button id="block93">Ask Our expert</button>
+                    </a>
+                </div>
+            </div>
+
+            <div id="block91">
+                <img src="https://static.oxinis.com/healthmug/image/consultation/unani-icon.jpg" alt="" id="block92">
+                <div id="block94">
+                    <h2 id="block95">Unani</h2>
+                    <p id="block94">Free Unani Consultation Online</p>
+                    <a href="product.html">
+                        <button id="block93">Ask Our expert</button>
+                    </a>
+                </div>
+            </div>
+
+            <div id="block91">
+                <img src="https://static.oxinis.com/healthmug/image/consultation/ayurveda-icon.jpg" alt="" id="block92">
+                <div id="block94">
+                    <h2 id="block95">Ayurveda</h2>
+                    <p id="block94">Free Ayurveda Consultation Online</p>
+                    <a href="product.html">
+                        <button id="block93">Ask Our expert</button>
+                    </a>
+                </div>
+            </div>
+
+            <div id="block91">
+                <img src="https://static.oxinis.com/healthmug/image/consultation/diet-nutrition-icon.jpg" alt="" id="block92">
+                <div id="block94">
+                    <h2 id="block95">Nutrition</h2>
+                    <p id="block94">Free Diet and Nutrition Counselling</p>
+                    <a href="product.html">
+                        <button id="block93">Ask Our expert</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br>
+
+    <div class="b10">
+        <h2 id="b11">Blogs</h2>
+
+        <div class="girdboxs">
+            <div class="box1">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/blog/article/205-banner-400.jpg" alt="" id="block12">
+                    <div id="b14">
+                        <p id="b13">Mirror, Mirror On The Wall- If They Laugh Then Screw Them ALL!!!!</p>
+                </a>
+                <p id="b14"> Let me ask my readers a question: Have you ever looked at your reflection in the mirror and felt dissatisfied with your body? Did you ever feel that you are too fat, too lean,</p>
+                </div>
+            </div>
+            <div class="box2">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/blog/article/202-banner-400.jpg" alt="" id="block11">
+                    <p id="b15">Korean Beauty Regimen 101</p>
+                </a>
+            </div>
+            <div class="box3">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/blog/article/4-banner-400.jpg" alt="" id="block11">
+                    <p id="b15">Korean Beauty Regimen 101 </p>
+                </a>
+            </div>
+            <div class="box4">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/blog/article/3-banner-400.jpg" alt="" id="block011">
+                    <p id="b15">Fruit & Vegetable Juices</p>
+                </a>
+            </div>
+            <div class="box5">
+                <a href="product.html">
+                    <img src="https://static.oxinis.com/healthmug/image/blog/article/2-banner-400.jpg" alt="" id="block011">
+                    <p id="b15">Fruit & Vegetable Juices</p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+<script>
+    //
+
+    let images = [
+        "https://static.oxinis.com/healthmug/image/asset/454-ru.png",
+        "https://static.oxinis.com/healthmug/image/asset/386-mu.png",
+        "https://static.oxinis.com/healthmug/image/asset/354-wn.jpg",
+        "https://static.oxinis.com/healthmug/image/asset/528-po.png",
+    ];
+
+
+
+
+
+    let container = document.getElementById("myslideshow");
+
+
+    function startslideshow() {
+
+        let counter = 0;
+        let img = document.createElement("img");
+        img.src = images[0];
+
+        container.append(img);
+        counter = counter + 1;
+
+        let interval = setInterval(function() {
+            container.innerHTML = null;
+
+            if (counter === images.length) {
+                counter = 0;
+            }
+            let img = document.createElement("img");
+
+            img.src = images[counter];
+            container.append(img);
+            counter = counter + 1;
+        }, 3000);
+    }
+    startslideshow();
+
+
+
+    let img = document.createElement("img");
+
+
+    //
+</script>
+
+<!-- 
+<script>
+    let data = [{
+        name: "Bags",
+        img: "https://static.oxinis.com/healthmug/image/category/10000.png",
+    }, {
+        name: "mobile",
+        img: "https://static.oxinis.com/healthmug/image/category/0.png",
+    }, {
+        name: "bodyspray",
+        img: "https://static.oxinis.com/healthmug/image/category/213.png",
+    }, {
+        name: "foods",
+        img: "https://static.oxinis.com/healthmug/image/category/1.png",
+    }, {
+        name: "foods",
+        img: "https://static.oxinis.com/healthmug/image/category/9.png",
+    }, {
+        name: "Watch",
+        img: "https://static.oxinis.com/healthmug/image/category/163.png",
+    }, {
+        name: "shoes",
+        img: "https://static.oxinis.com/healthmug/image/category/122.png",
+    }, {
+        name: "Football",
+        img: "https://static.oxinis.com/healthmug/image/category/82.png",
+    }, {
+        name: "Watch",
+        img: "https://static.oxinis.com/healthmug/image/category/41.png",
+    }, {
+        name: "mobile",
+        img: "https://static.oxinis.com/healthmug/image/category/20.png",
+    }, {
+        name: "bodyspray",
+        img: "https://static.oxinis.com/healthmug/image/category/38.png",
+    }, ];
+    let parent = document.getElementById('products');
+
+    function showproduct(product) {
+        data.forEach(function(product) {
+                    let div = document.createElement("div");
+                    let img = document.createElement("img");
+                    img.src = product.img;
+                    let product_name = document.createElement("p");
+                    product_name.textContent = product.name; // let addtocart_btn =
+                    document.createElement("button"); // addtocart_btn.innerText = "Add to Cart"; // addtocart_btn.onclick = function() { // addtocart(product); // }; div.append(img, product_name); parent.append(div); }); } showproduct(); if (localStorage.getItem("cart")
+                    ===
+                    null) {
+                    localStorage.setItem("cart", JSON.stringify([]));
+                }
+
+                function addtocart(p) {
+                    let products_cart = JSON.parse(localStorage.getItem("cart"));
+                    products_cart.push(p);
+                    localStorage.setItem("cart", JSON.stringify(products_cart));
+                    console.log("product_cart:",
+                        products_cart);
+                }
+
+                function sorthl() {
+                    let arr = data.sort(function(a, b) {
+                        return b.price - a.price;
+                    });
+                    showproduct(arr);
+                } //
+</script> -->
